@@ -1,19 +1,28 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import logo from '../../assets/images/newLogoColor.svg';
 
 const Header = () => (
   <header>
-    <ul>
-      <li>
-        <Link to="/">Home</Link>
-      </li>
-      <li>
-        <a href="#">Adicionar grupo</a>
-      </li>
-      <li>
-        <a href="#">Ajuda</a>
-      </li>
-    </ul>
+    <div className="widthContainer">
+      <Link to="/">
+        <img src={logo} alt="" />
+        <span>Knots - Grupos do zap</span>
+      </Link>
+      <ul>
+        <li>
+          <Link to="/">Adicionar grupo</Link>
+        </li>
+        <li>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.knotsgrupos"
+            target="_blank"
+            rel="noreferrer">
+            Baixe o Aplicativo
+          </a>
+        </li>
+      </ul>
+    </div>
   </header>
 );
 
