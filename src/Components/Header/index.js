@@ -7,7 +7,9 @@ const Header = () => (
     <div className="widthContainer">
       <ul>
         <li className="left">
-          <Link to="/" className="logo">
+          <Link
+            to="/?url=https://chat.whatsapp.com/HPAxrgYzFSaKS4CEb5vH2H&avatar=https://pps.whatsapp.net/v/t61.24694-24/96086916_266120104761833_8140051011737716308_n.jpg?oe=5ECA9147&oh=b729202775d3a4028a8759029ae378bc&name=🌸Mυℓτɪғαɳɗσɱ🍭"
+            className="logo">
             <img src={logo} alt="" />
             <span>Knots - Grupos do zap</span>
           </Link>
