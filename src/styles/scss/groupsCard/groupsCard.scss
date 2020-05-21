@@ -1,7 +1,7 @@
 .feed {
   @media (min-width: 767px) {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     grid-gap: 15px;
   }
@@ -59,10 +59,31 @@
 
 .groupButton {
   height: 60px;
+  width: 100%;
+  border: 0;
   display: flex;
   border-radius: 5px;
   justify-content: center;
   align-items: center;
   color: #fff;
   background-color: #128c7e;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+.report {
+  background-color: rgb(107, 18, 18);
+  border: none;
+  border-radius: 2px;
+  padding: 5px 20px;
+  color: #fff;
+  margin-top: 2px;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.6;
+  }
 }

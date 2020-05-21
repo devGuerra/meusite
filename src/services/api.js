@@ -7,7 +7,7 @@ const headers = {
 const env = 'development';
 
 export const urlApi =
-  env === 'development'
+  env === 'production'
     ? 'http://localhost:3333'
     : 'https://knots-whatsapp.herokuapp.com';
 

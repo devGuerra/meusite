@@ -1,7 +1,7 @@
 @media (min-width: 767px) {
   .feed {
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     grid-gap: 15px;
   }
@@ -54,12 +54,31 @@
 
 .groupButton {
   height: 60px;
+  width: 100%;
+  border: 0;
   display: flex;
   border-radius: 5px;
   justify-content: center;
   align-items: center;
   color: #fff;
   background-color: #128c7e;
+  cursor: pointer;
+}
+.groupButton:active {
+  opacity: 0.6;
+}
+
+.report {
+  background-color: #6b1212;
+  border: none;
+  border-radius: 2px;
+  padding: 5px 20px;
+  color: #fff;
+  margin-top: 2px;
+  cursor: pointer;
+}
+.report:active {
+  opacity: 0.6;
 }
 
 /*# sourceMappingURL=groupsCard.css.map */

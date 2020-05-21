@@ -3,6 +3,8 @@ header {
   background-color: #128c7e;
   display: flex;
   justify-content: center;
+  width: 100%;
+  padding: 0 20px;
 }
 header .widthContainer {
   display: flex;
@@ -17,32 +19,46 @@ header .widthContainer {
     padding: 0 20px;
   }
 }
-header .widthContainer a {
-  height: 80%;
-  align-items: center;
-  display: flex;
-}
-header .widthContainer a img {
-  height: 100%;
-  background-color: #fff;
-  border-radius: 5px;
-}
-header .widthContainer a span {
-  color: #fff;
-  margin-left: 20px;
-}
 header .widthContainer ul {
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
 }
 header .widthContainer ul li {
-  margin-left: 50px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
-header .widthContainer ul li a {
+header .widthContainer ul .left a {
+  height: 80%;
+  align-items: center;
+  display: flex;
+}
+header .widthContainer ul .left a img {
+  height: 100%;
+  background-color: #fff;
+  border-radius: 5px;
+}
+header .widthContainer ul .left a span {
+  color: #fff;
+  margin-left: 20px;
+}
+@media (max-width: 767px) {
+  header .widthContainer ul .left a span {
+    display: none;
+  }
+}
+header .widthContainer ul .right a {
   font-size: 16px;
   text-decoration: none;
-  color: #fff;
+  color: #000;
+  margin-left: 20px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=header.css.map */

@@ -1,16 +1,17 @@
 .category {
-  height: 120px;
+  height: 80px;
   background-color: #ece5dd;
-  overflow: auto;
+  position: relative;
+  margin-bottom: 20px;
+  transition: 0.1s ease;
 
-  @media (min-width: 769px) {
-    height: 80px;
-  }
 
   ul {
     display: flex;
     flex-direction: row;
     height: 100%;
+    grid-auto-rows: min-content;
+    overflow: scroll;
 
     @media (min-width: 769px) {
       width: 1100px;
@@ -35,8 +36,8 @@
 
         .icon {
           display: block;
-          height: 64px;
-          width: 64px;
+          height: 3 2px;
+          width: 32px;
           border-radius: 50%;
           margin-bottom: 5px;
 
@@ -46,6 +47,29 @@
           }
         }
       }
+    }
+  }
+
+  button {
+    @media (max-width: 1023px) {
+      display: none;
+    }
+
+    position: absolute;
+    bottom: -10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    background: #fff;
+    padding: 0 20px;
+    border-radius: 2px;
+    border: 1px solid rgba(161, 161, 161, 0.432);
+
+    &:hover {
+      cursor: pointer;
     }
   }
 }

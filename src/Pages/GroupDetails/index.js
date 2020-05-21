@@ -3,23 +3,28 @@ import { useParams } from 'react-router-dom';
 
 import api from '../../services/api';
 import GroupCard from '../../Components/GroupCard';
+import Categories from '../../Components/Categories';
 
 const Group = () => {
   const [params] = useState(useParams());
   const [group, setGroup] = useState([]);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     api
       .get(`/groups/${params.id}`)
       .then((response) => setGroup(response.data.group));
   }, []);
 
   return (
-    <div className="groupDetails feed">
-      <div className="group">
-        <GroupCard data={group} />
+    <main>
+      <Categories />
+      <div id="groupDetails" className="feed">
+        <div className="group">
+          <GroupCard data={group} />
+        </div>
       </div>
-    </div>
+    </main>
   );
 };
 

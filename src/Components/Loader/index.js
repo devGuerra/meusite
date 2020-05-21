@@ -7,7 +7,6 @@ function Loader() {
         <div />
         <div />
       </div>
-      <span>carregando...</span>
     </div>
   );
 }

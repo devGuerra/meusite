@@ -5,19 +5,20 @@ import logo from '../../assets/images/newLogoColor.svg';
 const Header = () => (
   <header>
     <div className="widthContainer">
-      <Link to="/">
-        <img src={logo} alt="" />
-        <span>Knots - Grupos do zap</span>
-      </Link>
       <ul>
-        <li>
-          <Link to="/">Adicionar grupo</Link>
+        <li className="left">
+          <Link to="/" className="logo">
+            <img src={logo} alt="" />
+            <span>Knots - Grupos do zap</span>
+          </Link>
         </li>
-        <li>
+        <li className="right">
+          <Link to="/new-group">Adicionar grupo</Link>
           <a
             href="https://play.google.com/store/apps/details?id=com.knotsgrupos"
             target="_blank"
-            rel="noreferrer">
+            className="playstore"
+            rel="noopener noreferrer">
             Baixe o Aplicativo
           </a>
         </li>

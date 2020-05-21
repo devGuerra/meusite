@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
 import api from '../../services/api';
 import GroupCard from '../../Components/GroupCard';
 import Loader from '../../Components/Loader';
 import Pagination from '../../Components/Pagination';
-// import { Container } from './styles';
+import Categories from '../../Components/Categories';
 
 function Category({ match }) {
   const [groups, setGroups] = useState([]);
@@ -19,15 +18,25 @@ function Category({ match }) {
     setLoading(false);
   }, [match.params.id]);
 
-  return loading ? (
-    <Loader />
-  ) : (
-    <div className="feed">
-      {groups.map((group) => (
-        <GroupCard key={group._id} data={group} />
-      ))}
-      <Pagination page={match.params.page} />
-    </div>
+  return (
+    <>
+      <Categories />
+      <main>
+        {loading ? (
+          <Loader />
+        ) : (
+          <div className="container">
+            <h2 className="title">{match.params.id}</h2>
+            <div className="feed">
+              {groups.map((group) => (
+                <GroupCard key={group._id} data={group} />
+              ))}
+              <Pagination page={match.params.page} />
+            </div>
+          </div>
+        )}
+      </main>
+    </>
   );
 }
 

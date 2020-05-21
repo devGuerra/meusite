@@ -1,2 +1,20 @@
-.groupDetails {
+#groupDetails {
+  display: flex;
+  .group {
+    .groupCard {
+      display: block;
+      width: 350px;
+      max-height: unset;
+
+      .groupContent {
+        .groupDescription {
+          position: unset;
+
+          span {
+            -webkit-line-clamp: 15;
+          }
+        }
+      }
+    }
+  }
 }

@@ -1,3 +1,16 @@
+#groupDetails {
+  display: flex;
+}
+#groupDetails .group .groupCard {
+  display: block;
+  width: 350px;
+  max-height: unset;
+}
+#groupDetails .group .groupCard .groupContent .groupDescription {
+  position: unset;
+}
+#groupDetails .group .groupCard .groupContent .groupDescription span {
+  -webkit-line-clamp: 15;
+}
 
-
-/*# sourceMappingURL=groupdetails.css.map */
+/*# sourceMappingURL=groupDetails.css.map */
