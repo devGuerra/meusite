@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.f58be416.chunk.css",
-    "main.js": "/static/js/main.9f963804.chunk.js",
-    "main.js.map": "/static/js/main.9f963804.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.4e472fd2.js",
-    "runtime-main.js.map": "/static/js/runtime-main.4e472fd2.js.map",
-    "static/js/2.5c8e6268.chunk.js": "/static/js/2.5c8e6268.chunk.js",
-    "static/js/2.5c8e6268.chunk.js.map": "/static/js/2.5c8e6268.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.6b9af753ef52dad6e71f0e293b081eb1.js": "/precache-manifest.6b9af753ef52dad6e71f0e293b081eb1.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.f58be416.chunk.css.map": "/static/css/main.f58be416.chunk.css.map",
-    "static/js/2.5c8e6268.chunk.js.LICENSE.txt": "/static/js/2.5c8e6268.chunk.js.LICENSE.txt",
-    "static/media/logowpp.png": "/static/media/logowpp.ace81c4d.png",
-    "static/media/newLogoColor.svg": "/static/media/newLogoColor.62354bd4.svg"
+    "main.css": "/meusite/static/css/main.f58be416.chunk.css",
+    "main.js": "/meusite/static/js/main.9f963804.chunk.js",
+    "main.js.map": "/meusite/static/js/main.9f963804.chunk.js.map",
+    "runtime-main.js": "/meusite/static/js/runtime-main.87235ed1.js",
+    "runtime-main.js.map": "/meusite/static/js/runtime-main.87235ed1.js.map",
+    "static/js/2.161a7f90.chunk.js": "/meusite/static/js/2.161a7f90.chunk.js",
+    "static/js/2.161a7f90.chunk.js.map": "/meusite/static/js/2.161a7f90.chunk.js.map",
+    "index.html": "/meusite/index.html",
+    "precache-manifest.95910311566b794f520041e2cd941f38.js": "/meusite/precache-manifest.95910311566b794f520041e2cd941f38.js",
+    "service-worker.js": "/meusite/service-worker.js",
+    "static/css/main.f58be416.chunk.css.map": "/meusite/static/css/main.f58be416.chunk.css.map",
+    "static/js/2.161a7f90.chunk.js.LICENSE.txt": "/meusite/static/js/2.161a7f90.chunk.js.LICENSE.txt",
+    "static/media/logowpp.png": "/meusite/static/media/logowpp.ace81c4d.png",
+    "static/media/newLogoColor.svg": "/meusite/static/media/newLogoColor.62354bd4.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4e472fd2.js",
-    "static/js/2.5c8e6268.chunk.js",
+    "static/js/runtime-main.87235ed1.js",
+    "static/js/2.161a7f90.chunk.js",
     "static/css/main.f58be416.chunk.css",
     "static/js/main.9f963804.chunk.js"
   ]
